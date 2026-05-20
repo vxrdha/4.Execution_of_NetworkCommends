@@ -55,7 +55,7 @@ This commands includes
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/ae776749-d463-4c22-b20e-f85b47cba6c8" />
 
 ## systeminfo:
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/3ff182bf-ed77-4b5f-9458-bb3757103ef8" />
+<img width="703" height="1013" alt="image" src="https://github.com/user-attachments/assets/111b96ea-effe-428c-a5a0-281014d87b89" />
 
 ## Result
 Thus Execution of Network commands Performed 
