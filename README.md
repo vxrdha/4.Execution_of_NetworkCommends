@@ -26,54 +26,36 @@ This commands includes
 • Other IP Commands e.g. show ip route etc.
 <BR>
 
-## PROGRAM
-## SERVER:
-```
-import socket
-
-s = socket.socket()
-s.connect(('localhost', 8000))
-
-while True:
-    ip = input("Enter the website you want to ping: ")
-
-    s.send(ip.encode())
-
-    response = s.recv(1024).decode()
-    print(response)
-
-s.close()
-```
-## CLIENT:
-```
-import socket
-from pythonping import ping
-
-s = socket.socket()
-s.bind(('localhost', 8000))
-s.listen(5)
-
-print("Waiting for connection...")
-c, addr = s.accept()
-print("Connected to:", addr)
-
-while True:
-    hostname = c.recv(1024).decode()
-
-    if not hostname:
-        break
-
-    try:
-        result = ping(hostname, verbose=False)
-        c.send(str(result).encode())
-    except Exception:
-        c.send("Not Found".encode())
-
-c.close()
-s.close()
-```
 ## Output
-<img width="946" height="335" alt="image" src="https://github.com/user-attachments/assets/0dff1322-f2a2-46e9-b33e-1ab898b6b6ae" />
+## netstat:
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/f08e1a8d-c9dd-4139-b19e-a5cab32fbf39" />
+
+## ipconfig:
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/702f9274-b338-480a-9615-cf58e0370533" />
+
+## ping:
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/8344b5d7-efa3-46af-84e3-d0dc528e9bb4" />
+
+## tracert:
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/28fc5aef-848e-4423-9985-8246111c4445" />
+
+## nslookup:
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/fe0d251a-d13c-4b92-9951-f7c609f40f54" />
+
+## getmac:
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/73022a09-eb83-4a0f-b629-95cf829585ea" />
+
+## hostname:
+<img width="1083" height="259" alt="image" src="https://github.com/user-attachments/assets/75e1de24-761a-40c5-bbea-73a905249393" />
+
+## nbtstat:
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/a6df2a13-3c75-4681-8624-c5bdc7e3c429" />
+
+## arp:
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/ae776749-d463-4c22-b20e-f85b47cba6c8" />
+
+## systeminfo:
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/3ff182bf-ed77-4b5f-9458-bb3757103ef8" />
 
 ## Result
 Thus Execution of Network commands Performed 
